@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: task3
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics,health
+  metrics:
+    tags:
+      application: bishop-prototype
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+    persist-authorization: true
